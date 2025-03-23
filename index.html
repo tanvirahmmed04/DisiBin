@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Disibin</title>
-        <link rel="icon" href="images/favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Disibin</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/favicon.png">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="images/logo.png" alt="" >
-                    <h1>Disibin</h1>
+</head>
+<body>
+
+    <nav>
+        <div id="home-logo">
+            <h1>DisiBin</h1>
+        </div>
+        <div class="menudiv">
+            <i id="user" class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-content">
+            <a href="">Home</a>
+            <div class="dropdown">
+                <a href="#" id="services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">Graphics Design</a>
+                    <a href="#">3D Sturcture</a>
+                    <a href="#">Brand Promo</a>
                 </div>
-                <input type="text" placeholder="serach">
-                <i class="fa-solid fa-bars" id="menu"></i>
-                <div class="navopt">
-                    <a href="">Home</a>
-                    <div class="servicedrop">
-                        <a href="#">Services</a>
-                        <div class="serdropopt">
-                            <a href="#">Web Dev</a>
-                            <a href="#">Graphics Dev</a>
-                            <a href="#">3D Dev</a>
-                            <a href="#">Ui/Ux Dev</a>
-                        </div>
-                    </div>
-                    <div class="contactdrop">
-                        <a href="#">Contact</a>
-                        <div class="condropopt">
-                            <a href="#">Youtube</a>
-                            <a href="https://www.facebook.com/disibin">Facebook</a>
-                            <a href="#">Instagram</a>
-                        </div>
-                    </div>
-                    <a href="#" id="account">Account</a>
+            </div>
+            <a href="#">Demo</a>
+            <div class="dropdown">
+                <a href="#" id="getus">Get Us</a>
+                <div class="dropdown-content">
+                    <a href="https://facebook.com/disibin">Facebook</a>
+                    <a href="https://youtube.com/@disibin">Youtube</a>
+                    <a href="https://instagram.com/user.disibin">Instagram</a>
+                    <a href="https://t.me/disibin">Telegram</a>
                 </div>
-                
-            </nav>
-            <div class="loginbox">
-                <i class="fa-solid fa-xmark" id="crossloginbox"></i>
-                <p>Log in to stay tuned</p>
-                <h1>Disibin</h1>
+            </div>
+            <i id="user" class="fa-solid fa-user"></i>
+        </div>
+        
+    </nav>
+
+
+
+    <div class="sidebar">
+        <div>
+            <a href="">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Project</a>
+            <a href="#">Demo</a>
+            <a href="#">Offers</a>
+            <a href="#">Help</a>
+        </div>
+        <div>
+            <i id="user" class="fa-solid fa-user"></i>
+            <i id="setting" class="fa-solid fa-gear"></i>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="signinup">
+            <div class="signinbox">
+                <i class="fa-solid fa-xmark" id="crosssignin"></i>
+                <p>Welcome back to</p>
+                <h1>DisiBin</h1>
                 <div>
                     <label for="username">username</label>
                     <input type="text" id="username">
@@ -55,67 +81,71 @@
                     <label for="password">password</label>
                     <input type="text" id="password">
                 </div>
-                <a href="#" id="reset">Forgotten password?</a>
-                <a href="#" id="login">Login</a>
-                <a href="#" id="createnew">Create new account</a>
+                <a href="#">forget?</a>
+                <a href="#" id="signinbtn">Sign in</a>
+                <button id="newsignup">Sign Up</button>
             </div>
-            <div class="createnewbox">
-                <i class="fa-solid fa-arrow-left" id="tologinbox"></i>
-                <i class="fa-solid fa-xmark" id="crosscreatebox"></i>
-                <p>Create profile and explore all developer section</p>
-                <h1>Disibin</h1>
+            <div class="signupbox">
+                <i class="fa-solid fa-left-long" id="backsignin"></i>
+                <i class="fa-solid fa-xmark" id="crosssignup"></i>
+                <p>Guest user, Welcome to</p>
+                <h1>DisiBin</h1>
+                <p>Create your own account and enjoy our services</p>
                 <div>
-                    <label for="name">name</label>
-                    <input type="text" id="name">
-                </div>
-                <div>
-                    <label for="newusername">name</label>
+                    <label for="username">username</label>
                     <input type="text" id="newusername">
-                </div>
-                <div>
-                    <label for="newemail">email</label>
-                    <input type="text" id="newemail">
-                </div>
-                <div>
-                    <label for="newdateofbirth">date of birth</label>
-                    <input type="date" id="newdateofbirth">
-                </div>
-                <div>
-                    <label for="newpass">password</label>
-                    <input type="text" id="newpass">
-                </div>
-                
-                <a href="" id="createacc">Create</a>
-            </div>
-        </header>
 
-        <div class="contentdiv">
-            <div class="detailsbox">
-            
-                <div class="details">
-                    <p>Welcome to</p>
-                    <h1>Disibin</h1>
-                    <p>I'm here to transform your ideas into visually compelling experiences that captivate and inspire.</p>
-                    <p>Let's create something amazing together!</p>
-                    <p>Take a look around and explore our latest project</p>
-                    <div class="btn">
-                        <a href="#">Web Dev</a>
-                        <a href="#">Graphics Dev</a>
-                        <a href="#">3D Dev</a>
-                        <a href="#">Ui/Ux Dev</a>
-                    </div>
-                    <p>You can book us and get consultancy for free!</p>
-                    <a href="">Get us</a>
                 </div>
-    
-    
-                <div class="imagecontainer">
-                    <img src="images/logo.png" alt="">
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" id="newemail">
+
                 </div>
+                <div>
+                    <label for="dob">date of birth</label>
+                    <input type="date" id="newdateofbirth">
+
+                </div>
+                <div>
+                    <label for="">password</label>
+                    <input type="text" id="newpassword">
+                </div>
+                <a href="#" id="signupbtn">Submit</a>
+                <button>help?</button>
             </div>
-            
+
         </div>
 
-    </body>
-<script src="index.js"></script>
+        
+
+
+        <div class="info">
+            <p>Welcome to</p>
+            <h1>DisiBin</h1>
+            <p>I'm here to transform your ideas into visually compelling experiences that captivate and inspire</p>
+            <p>Let's build something amazing together!</p>
+            <p>Take a look and explore our latest projects</p>
+            <div class="opt">
+                <a href="#">UI/UX Design</a>
+                <a href="#">Graphics Design</a>
+                <a href="#">3D Design</a>
+                <a href="#">Brand Promo</a>
+            </div>
+            <p>You can message us and avail a free consultancy</p>
+            <a href="#">Book</a>
+        </div>
+        
+        <div class="uiux-container">
+            <div class="uiuxcontent">
+
+            </div>
+        </div>
+        
+            
+            
+        
+    </div>
+    
+</body>
+<script src="app.js"></script>
 </html>
