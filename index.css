@@ -1,300 +1,383 @@
+
+
+
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-body{
-    background-image: url(images/background.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    background-attachment: fixed;
     user-select: none;
-    
+    text-decoration: none;
 }
-.blur{
-    filter: blur(10px);
+
+html, body{
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 nav{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.215);
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
-}
-nav .logo{
-    height: 40px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 20px ;
-    color: #2EBDFF;
-}
-nav img{
-    height: 35px;
-    width: 35px;
-}
-nav input{
-    text-align: center;
-    width: 300px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background-color: #fceedc;
-    color: black;
-    height: 25px;
-}
-@media(max-width: 1000px){
-    nav input{
-        visibility: hidden;
-    }
-}
-nav #menu{
-    visibility: hidden;
-    color: #2EBDFF;
-}
-
-nav .navopt{
-    height: 50px;
+    background-color: #153A42;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-right: 20px;
-}
-nav .navopt a{
-    width: 100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    cursor: pointer;
-    color: #2EBDFF;
-}
-nav .navopt a:hover{
-    background-color: #fceedc;
-}
-.servicedrop, .contactdrop{
-    display: inline-block;
-    position: relative;
-    height: 100%;
-}
-.serdropopt, .condropopt{
-    position: absolute;
-    display: none;
-    min-width: 150px;
-    z-index: 1;
-
-}
-.serdropopt a, .condropopt a{
-    color: black;
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    margin-top: 5px;
-    border-radius: 5px;
-    
-}
-.servicedrop a, .contactdrop a{
-    width: 100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    cursor: pointer;
-    color: #2EBDFF;
-}
-.servicedrop:hover .serdropopt{
-    display: block;
-}
-.contactdrop:hover .condropopt{
-    display: block;
-}
-@media(max-width: 500px){
-    nav .navopt{
-        visibility: hidden;
-    }
-    nav #menu{
-        visibility: visible;
-    }
-}
-.loginbox{
-    height: 70vh;
-    width: 400px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fceedc;
-    border-radius: 20px;
-    gap: 5px;
-    position: absolute;
-    right: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-.loginbox div{
-    display: flex;
-    flex-direction: column;
-}
-.loginbox label{
-    font-size: 12px;
-}
-.loginbox input{
-    width: 200px;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid #2EBDFF;
-    outline: none;
-    text-align: center;
-}
-.loginbox #reset{
-    font-size: 15px;
-    
-}
-.loginbox #login{
-    background-color: #2EBDFF;
-    width: 100px;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    height: 25px;
-    margin-top: 5px;
-}
-.loginbox #createnew{
-    position: absolute;
-    bottom: 50px;
-}
-.loginbox a{
-    margin: 0;
-
-}
-.loginbox #crossloginbox{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.createnewbox{
-    height: 70vh;
-    width: 400px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fceedc;
-    border-radius: 20px;
-    gap: 5px;
-    position: absolute;
-    right: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-.createnewbox div{
-    display: flex;
-    flex-direction: column;
-}
-.createnewbox label{
-    font-size: 12px;
-
-}
-.createnewbox input{
-    width: 200px;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid #2EBDFF;
-    outline: none;
-    text-align: center;
-}
-.createnewbox #createacc{
-    background-color: #2EBDFF;
-    width: 100px;
-    text-align: center;
-    color: white;
-    border-radius: 5px;
-    height: 25px;
-    margin-top: 5px;
-}
-.createnewbox #tologinbox{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-
-}
-.createnewbox #crosscreatebox{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-
-}
-
-.detailsbox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    gap: 100px;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    z-index: 999;
+}
+nav #home-logo{
+    color: #fff;
+    margin-left: 40px;
+    
+}
+nav .nav-content{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .2rem;
+    margin-right: 40px;
+}
+nav .nav-content a ,i{
+    color: #fff;
+    height: 3rem;
+    width: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+nav .nav-content i{
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+nav .menudiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+nav .menudiv i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 3rem;
+    visibility: hidden;
+}
+nav .nav-content a:hover ,nav .nav-content a i:hover{
+    
+    background-color: #23505b;
+}
+@media(max-width: 700px){
+    nav .menudiv i{
+        visibility: visible;
+        
+    }
+    nav .nav-content a , nav .nav-content i{
+        visibility: hidden;
+    }
+    
+    nav #home-logo{
+        width: 300px;
+        
+        margin-left: 80px;
+    }
+    
+    .sidebar{
+        font-size: 10px;
+    }
+}
+
+nav .dropdown{
+    position: relative;
+    display: inline-block;
+
+}
+nav .dropdown-content{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    min-width: 130px;
     
     
 }
-.details{
+nav .dropdown-content a{
+    min-width: 135px;
+    color: #D72326;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
+    padding-left: 3px;
+    font-size: 16px;
+}nav .dropdown-content a:hover{
+    color: #fff;
+}
+nav .dropdown:hover .dropdown-content {
+    display: block;
+    color: #fff;
+    
+}
+
+
+.sidebar{
+    color: #153A42;
+    height: 33rem;
+    display: flex;
+    position: fixed;
+    margin-top: 3.2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: .3rem;
+    width: 5rem;
+    background-color: #153a4212;
+    border-radius: .3rem;
+}
+.sidebar div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
-    gap: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
-.details .btn{
-    display: flex;
-    flex-direction: row;
-
-}
-.details .btn a{
-    color: white;
-    text-decoration: none;
-    height: 30px;
-    width: 100px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: tan;
-    margin: 10px;
-    cursor: pointer;
+.sidebar a{
+    color: #fff;
+    height: 2rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.details .btn a:hover{
-    background-color: #fef6eccc;
-    color: #2ebdff;
-}
-.imagecontainer img{
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
+    color: #153A42;
+    text-decoration: none;
+    font-weight: 600;
     
 }
+.sidebar i{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #153A42;
+    margin: 2px;
+}
+.sidebar i:hover{
+    color: #fff;
+    background-color: #153A42;
+}
+.sidebar a:hover{
+    color: #fff;
+    background-color: #153A42;
+}
+
+@media(max-width: 700px){
+    .container{
+        font-size: 8px;
+    }
+    .container .info{
+        height: auto;
+        
+    }
+    
+}
+
+
+
+.container{
+     margin-top: 3.3rem;
+     margin-left: 5.5rem;
+}
+
+
+
+.signinup{
+    height: 36rem;
+    background-color:#153A42;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.signinup .signinbox{
+    height: 25rem;
+    width: 25rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    color: #153A42;
+    position: relative;
+}
+.signinbox i{
+    color: #153A42;
+    position: absolute;
+    top: 1rem;
+    right: -5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+.signinup .signinbox input{
+    width: 15rem;
+    border-radius: .4rem;
+    outline: none;
+    border: .1px solid #153A42;
+    height: 1.5rem;
+    
+
+}
+.signinbox div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.signinup #signinbtn{
+    background-color: #153A42;
+    color: #fff;
+    padding: 5px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+.signinup #signinbtn:hover{
+    color: #D72326;
+}
+.signinbox button{
+    position: absolute;
+    bottom: 15px;
+    width: 100px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+.signinup .signupbox{
+    height: 25rem;
+    width: 25rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    color: #153A42;
+    position: relative;
+}
+
+
+.signupbox div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.signupbox input{
+    width: 15rem;
+    border-radius: .4rem;
+    outline: none;
+    border: .1px solid #153A42;
+    height: 1.5rem;
+}
+
+.signupbox #signupbtn{
+    background-color: #153A42;
+    color: #fff;
+    padding: 5px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+.signupbox button{
+    position: absolute;
+    bottom: 15px;
+    width: 100px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.signupbox #crosssignup{
+    color: #153A42;
+    position: absolute;
+    top: 1rem;
+    right: -5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.signupbox #backsignin{
+    color: #153A42;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+.container .info{
+    background-color:#153A42;
+    height: 36rem;
+    min-height: 15rem;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.info a{
+    color: #162022;
+    background-color: #fff;
+    padding: .3rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    width: 100px;
+    text-align: center;
+}
+.info a:hover{
+    background-color: #D72326;
+    color: #fff;
+}
+
+.uiux-container{
+    height: 39rem;
+    background-color:#153A42;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.uiux-container .uiuxcontent{
+    background-color: #fff;
+
+}
+
+/* style for webpage
+height: 39rem;
+background-color:#153A42;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: .2rem; */
