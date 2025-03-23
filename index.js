@@ -1,50 +1,49 @@
-//body
-
-const body= document.querySelector("body");
-const detailsbox= document.querySelector(".detailsbox");
-const contentdiv= document.querySelector(".contentdiv");
-
+/*
+#153A42
+#D72326
+#FFF
 
 
-//nav 
-const account = document.querySelector("#account");
+*/
+//sign box reltaed
+let userbtn= document.querySelectorAll("#user");
+let signinupbox= document.querySelector(".signinup");
+let signinbox = document.querySelector(".signinbox");
+let signupbox = document.querySelector(".signupbox");
+let signupbtn= document.querySelector("#newsignup");
+let crosssignin= document.querySelector("#crosssignin");
+let crosssignup= document.querySelector("#crosssignup");
+let backsignin= document.querySelector("#backsignin");
 
 
 
-//login
-const createnew= document.querySelector("#createnew")
-const loginbox= document.querySelector(".loginbox");
-const crossloginbox = document.querySelector("#crossloginbox");
 
-//create new
-const crosscreatebox= document.querySelector("#crosscreatebox");
-const createnewbox =document.querySelector(".createnewbox");
-const backtologin = document.querySelector("#tologinbox");
+userbtn.forEach(button =>{
+    button.onclick= function(){
+        console.log("hello");
+        signinupbox.style.display= "flex";
+        signinbox.style.display="flex";
+        signupbox.style.display="none";
+    }
+})
 
-
-//onclick options
-createnew.onclick= function(act){
-    act.preventDefault();
-    createnewbox.style.display="flex";
-    loginbox.style.display="none";
+signupbtn.onclick= function(){
+    signinbox.style.display="none";
+    signupbox.style.display="flex";
+}
+crosssignin.onclick= function(){
+    signinupbox.style.display= "none";
+    signinbox.style.display="none";
+    signupbox.style.display="none";
+}
+crosssignup.onclick= function(){
+    signupbox.style.display="none";
+    signinupbox.style.display="none";
+}
+backsignin.onclick= function(){
+    signinupbox.style.display= "flex";
+    signinbox.style.display="flex";
+    signupbox.style.display="none";
 }
 
-crosscreatebox.onclick= function(){
-    createnewbox.style.display="none";
-    contentdiv.style.display="flex";
-}
-backtologin.onclick= function(){
-    loginbox.style.display="flex";
-    createnewbox.style.display="none";
-} 
-
-account.onclick= function(act){
-    act.preventDefault();
-    loginbox.style.display="flex";
-    contentdiv.style.display="none";
-}
-
-crossloginbox.onclick= function(){
-    loginbox.style.display="none";
-    contentdiv.style.display="flex";
-}
+// sign box related end
