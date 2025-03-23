@@ -1,10 +1,4 @@
-/*
-#153A42
-#D72326
-#FFF
 
-
-*/
 //sign box reltaed
 let userbtn= document.querySelectorAll("#user");
 let signinupbox= document.querySelector(".signinup");
