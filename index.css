@@ -6,6 +6,7 @@
     margin: 0;
     user-select: none;
     text-decoration: none;
+    /* outline: 1px solid red; */
 }
 
 html, body{
@@ -13,14 +14,14 @@ html, body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    width: 100vw;
-    
+    max-width: 100vw;
+    width: 100%;
     font-size: 15px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    
 }
 nav{
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: #153A42;
     display: flex;
@@ -197,7 +198,8 @@ nav .dropdown:hover .dropdown-content {
 
 .container{
      margin-top: 3.3rem;
-     margin-left: 5.5rem;
+     padding-left: 5.5rem;
+    
 }
 
 
@@ -208,7 +210,6 @@ nav .dropdown:hover .dropdown-content {
     display: none;
     align-items: center;
     justify-content: center;
-    
 }
 .signinup .signinbox{
     height: 25rem;
@@ -248,7 +249,7 @@ nav .dropdown:hover .dropdown-content {
     align-items: start;
     flex-direction: column;
 }
-.signinup #signinbtn{
+.signin #signinbtn{
     background-color: #153A42;
     color: #fff;
     padding: 5px;
@@ -257,7 +258,7 @@ nav .dropdown:hover .dropdown-content {
     border-radius: 5px;
 }
 .signinup #signinbtn:hover{
-    color: #D72326;
+    color: #162022;
 }
 .signinbox button{
     position: absolute;
@@ -363,15 +364,142 @@ nav .dropdown:hover .dropdown-content {
     height: 39rem;
     background-color:#153A42;
     color: #fff;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+.uiux-dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.uiux-dev .memberbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.memberbox .member{
+    height: 160px;
+    width: 120px;
+    
+    
+}
 
-.uiux-container .uiuxcontent{
-    background-color: #fff;
+.memberbox .member img{
+    height: 160px;
+    width: 120px;
+    cursor:grab;
+    object-fit: contain;
+}
+.memberbox .member p{
+    margin-top: -10px;
+    bottom: 1px;
+    color: #fff;
+    z-index: 100;
+    
+}
+
+.graphics-container{
+    height: 39rem;
+    background-color:#153A42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graphics-dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.graphics-dev div{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    gap: 5px;
 
 }
+.graphics-dev div a{
+    color:#153A42;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 1rem;
+}
+.graphics-dev div a:hover{
+    color: #D72326;
+}
+
+
+
+.brand-promo-container{
+    height: 39rem;
+    background-color:#153A42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.brand-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.brand-promo div{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.brand-promo div a{
+    color:#153A42;
+    background-color: #fff;
+    padding: 7px;
+    border-radius: 1rem;
+}
+.brand-promo div a:hover{
+    color: #D72326;
+}
+
+footer{
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer h1{
+    color: #153A42;
+}
+footer a{
+    text-decoration: none;
+    color: #D72326;
+}
+.three-d-conatainer{
+    height: 39rem;
+    background-color:#153A42;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.three-d-design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
 
 /* style for webpage
 height: 39rem;
