@@ -174,6 +174,33 @@ nav .dropdown:hover .dropdown-content {
     color: #153A42;
     margin: 2px;
 }
+
+
+.sidebar .service-sidebar{
+    position: relative;
+    display: flex;
+    width: 5rem;
+}
+.sidebar .service-sidebar .servicessidebar-content{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 100%;
+    
+    
+}
+.service-sidebar:hover .servicessidebar-content{
+    display: block;
+    
+}
+.servicessidebar-content a{
+    color: #D72326;
+    width: 120px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: start;
+}
+
 .sidebar i:hover{
     color: #fff;
     background-color: #153A42;
