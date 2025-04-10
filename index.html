@@ -2,229 +2,451 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Disibin</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisiBin</title>
+    
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+     <link rel="icon" href="images/favicon.png">
+    <!-- header footer -->
+     <link rel="stylesheet" href="index.css">
+    <!-- main body sidebar and userbox -->
+    <link rel="stylesheet" href="main.css">
+    <!-- contentbox -->
+     <link rel="stylesheet" href="contentbox.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- fontawesome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body>
 
     <nav>
-        <div id="home-logo">
-            <h1>DisiBin</h1>
-        </div>
-        <div class="menudiv">
-            <i id="user" class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="nav-content">
+        <a href="" class="logo">DisiBin</a>
+        <div class="navcontent">
             <a href="">Home</a>
-            <div class="dropdown">
-                <a href="#" id="services">Services</a>
-                <div class="dropdown-content">
-                    <a href="" id="uiuxbtn">UI/UX Design</a>
-                    <a href="" id="graphicsbtn">Graphics Design</a>
-                    <a href="" id="threedbtn">3D Sturcture</a>
-                    <a href="" id="brandpromobtn">Brand Promo</a>
+            <div class="services">
+                <a href="#">Service
+                    <i style="padding: 9px;" class="fa-solid fa-sort-down"></i>
+                </a>
+                <div class="serviceopt">
+                    <a href="" id="webdevbtn">Wev Dev</a>
+                    <a href="" id="appdevbtn">App Dev</a>
+                    <a href="" id="veditbtn">Video Editor</a>
+                    <a href="" id="graphicsdevbtn">Graphics Dev</a>
                 </div>
             </div>
-            <a href="#">Demo</a>
-            <div class="dropdown">
-                <a href="#" id="getus">Get Us</a>
-                <div class="dropdown-content">
-                    <a href="https://facebook.com/disibin">Facebook</a>
-                    <a href="https://youtube.com/@disibin">Youtube</a>
-                    <a href="https://instagram.com/user.disibin">Instagram</a>
-                    <a href="https://t.me/disibin">Telegram</a>
+            <div class="pages">
+                <a href="#">Page
+                    <i style="padding: 9px;" class="fa-solid fa-sort-down"></i>
+                </a>
+                <div class="pageopt">
+                    <a href="http://facebook.com/disibin">Facebook</a>
+                    <a href="http://instagram.com/user.disibin">Instagram</a>
+                    <a href="http://youtube.com/@disibin">Youtube</a>
                 </div>
             </div>
-            <i id="user" class="fa-solid fa-user"></i>
+            <a href="" id="reviewbtn">Reviews</a>
+            <i class="fa-regular fa-user" id="usericon"></i>
         </div>
-        
+        <i class="fa-solid fa-bars" id="menubtn"></i>
     </nav>
 
 
 
-    <div class="sidebar">
-        <div>
-            <a href="">Home</a>
-            <div class="service-sidebar">
-                <a href="#">Services</a>
-                <div class="servicessidebar-content">
-                    <a href="" id="uiuxbtn">UI/UX Design</a>
-                    <a href="" id="graphicsbtn">Graphics Design</a>
-                    <a href="" id="threedbtn">3D Sturcture</a>
-                    <a href="" id="brandpromobtn">Brand Promo</a>
-                </div>
-            </div>
-            <a href="#">Project</a>
-            <a href="#">Demo</a>
-            <a href="#">Offers</a>
-            <a href="#">Help</a>
-        </div>
-        <div>
-            <i id="user" class="fa-solid fa-user"></i>
-            <i id="setting" class="fa-solid fa-gear"></i>
-        </div>
-    </div>
 
 
-    <div class="container">
-
-
-        <div class="signinup">
-            <div class="signinbox">
-                <i class="fa-solid fa-xmark" id="crosssignin"></i>
-                <p>Welcome back to</p>
-                <h1>DisiBin</h1>
-                <div>
-                    <label for="username">username</label>
-                    <input type="text" id="username">
-                </div>
-                <div>
-                    <label for="password">password</label>
-                    <input type="text" id="password">
-                </div>
-                <a href="#">forget?</a>
-                <a href="#" id="signinbtn">Sign in</a>
-                <button id="newsignup">Sign Up</button>
-            </div>
-            <div class="signupbox">
-                <i class="fa-solid fa-left-long" id="backsignin"></i>
-                <i class="fa-solid fa-xmark" id="crosssignup"></i>
-                <p>Guest user, Welcome to</p>
-                <h1>DisiBin</h1>
-                <p>Create your own account and enjoy our services</p>
-                <div>
-                    <label for="username">username</label>
-                    <input type="text">
-
-                </div>
-                <div>
-                    <label for="email">email</label>
-                    <input type="email">
-
-                </div>
-                <div>
-                    <label for="dob">date of birth</label>
-                    <input type="date">
-
-                </div>
-                <div>
-                    <label for="">password</label>
-                    <input type="text">
-                </div>
-                <a href="#" id="signupbtn">Submit</a>
-                <button>help?</button>
-            </div>
-
-        </div>
-
+    <div class="main">
         
-
-
-        <div class="info">
-            <p>Welcome to</p>
-            <h1>DisiBin</h1>
-            <p>I'm here to transform your ideas into visually compelling experiences that captivate and inspire</p>
-            <p>Let's build something amazing together!</p>
-            <p>Take a look and explore our latest projects</p>
-            <div class="opt">
-                <a href="" id="uiuxbtn">UI/UX Design</a>
-                <a href="" id="graphicsbtn">Graphics Design</a>
-                <a href="" id="threedbtn">3D Design</a>
-                <a href="" id="brandpromobtn">Brand Promo</a>
-            </div>
-            <p>You can message us and avail a free consultancy</p>
-            <a href="#">Book</a>
-        </div>
-        
-        <div class="uiux-container">
-
-            <div class="uiux-dev">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebarcontent">
                 
-                <p>Hey, Are you seraching for <br> frontend Web developer <br> for your business website?</p>
-                <h3>Our team is here to give a superior experience</h3>
-                <h3>in upgrading your business</h3>
-                <h1>DisiBin</h1>
-                <h3>Meet our team:</h3>
-                <div class="memberbox">
-                    <div class="member">
-                        <img src="images/profile.png" alt="">
-                        <p>Member 1</p>
-                    </div>
-                    <div class="member">
-                        <img src="images/profile.png" alt="">
-                        <p>Member 2</p>
-                    </div>
-                    <div class="member">
-                        <img src="images/profile.png" alt="">
-                        <p>Member 3</p>
+                <a href="">Home</a>
+                <div class="sidebar-services">
+                    <a href="#">Service</a>
+                       
+                    
+                    <div class="sidebar-serviceopt">
+                        <a href="" id="webdevbtn">Wev Dev</a>
+                        <a href="" id="appdevbtn">App Dev</a>
+                        <a href="" id="veditbtn">Video Editor</a>
+                        <a href="" id="graphicsdevbtn">Graphics Dev</a>
                     </div>
                 </div>
+                <div class="sidebar-pages">
+                    <a href="#">Page</a>
+                    
+                    <div class="sidebar-pageopt">
+                        <a href="http://facebook.com/disibin">Facebook</a>
+                        <a href="http://instagram.com/user.disibin">Instagram</a>
+                        <a href="http://youtube.com/@disibin">Youtube</a>
+                    </div>
+                </div>
+                <a href="#">Project</a>
+                <a href="#">Demo</a>
+                <a href="#">Offers</a>
+                <a href="" id="reviewbtn">Reviews</a>
+                <a href="">Job</a>
+                <a href="">Help</a>
             </div>
-        </div>
-        
-
-        <div class="graphics-container">
-            <div class="graphics-dev">
-                <p>Hello Sir, are you looking for </p>
-                <p> graphics designer</p>
-                <p>for yor visual conceptual task?</p>
-                <h4>We're are here to represent your ideas</h4>
-                <h4>through visual content</h4>
-                <h3>We can create for you:</h3>
-                <div>
-                    <a href="">Promotional Poster</a>
-                    <a href="">Media Banner</a>
-                    <a href="">Product Level</a>
-                    <a href="">Fashion Design</a>
-                </div>
+            <div class="sidebtns">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <i class="fa-regular fa-user" id="usericon"></i>
             </div>
         </div>
 
-        <div class="three-d-conatainer">
-            <div class="three-d-design">
-                <h2>We're working on this</h2>
+        <!-- userbox -->
+        <div class="userbox">
+            <div class="user">
+                <div class="signinbox">
+                    <i class="fa-solid fa-xmark" id="xsignin"></i>
+                    <div class="signinwelcome">
+                        <h3>Welcome back to</h3>
+                        <h1>DisiBin</h1>
+                        <p>sign in to access your</p>
+                        <p>owned dashboard</p>
+                        <a href="" id="gotosignup">New here?</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="signindetails">
+                        <div>
+                            <label for="username">usrename</label>
+                            <input type="text" id="usrename">
+                        </div>
+                        <div>
+                            <label for="password">password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <a href="" id="gotosignup">forget password?</a>
+                        <button id="signin-btn">sign in</button>
+                        
+                    </div>
+                </div>
+                <div class="signupbox">
+                    <i class="fa-solid fa-arrow-left" id="gotosignin"></i>
+                    <i class="fa-solid fa-xmark" id="xsignup"></i>
+                    <div class="signupwelcome">
+                        <h3>Welcome to</h3>
+                        <h1>Disibin</h1>
+                        <p>create your account to</p>
+                        <p>own your dashboard</p>
+                        <p>& enjoy our services</p>
+                    </div>
+                    <div class="signupdetails">
+                        <div>
+                            <label for="name">name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="username">username</label>
+                            <input type="text" id="newusername">
+                        </div>
+                        <div>
+                            <label for="newemail">email</label>
+                            <input type="text" id="newemail">
+                        </div>
+                        <div>
+                            <label for="dob">date of birth</label>
+                            <input type="date" id="newdob">
+                        </div>
+                        <div>
+                            <label for="newpassword">password</label>
+                            <input type="password" id="newpassword">
+                        </div>
+                        <button id="signup-btn">sign up</button>
+                    </div>
+                </div>
             </div>
-        </div>
             
-        <div class="brand-promo-container">
-            <div class="brand-promo">
-                <h3>You want to promote your brand business?</h3>
-                <h3>You need global recognaisation?</h3>
-                <h2>We're here for you</h2>
-                <p>We'll do :</p>
-                <div>
-                    <a href="">Promote your Brand</a>
-                    <a href="">Massive Collaboration</a>
-                    <a href="">Highly attracting ads</a>
-                    <a href="">Cast on every platforms</a>
-                </div>
-            </div>
         </div>
 
-        
+
+
+        <div class="contentbox">
+
+
+            <div class="intro">
+                <p>Welcome to</p>
+                <h1>DisiBin</h1>
+                <p>I'm here to transform your ideas into visually</p>
+                <p>compelling experiences that captivate and inspire</p>
+                <p>Let's build something amazing together!</p>
+                <p>Take a look and explore our latest projects</p>
+                <div class="opt">
+                    <a href="" id="webdevbtn">Wev Dev</a>
+                    <a href="" id="appdevbtn">App Dev</a>
+                    <a href="" id="veditbtn">Video Editor</a>
+                    <a href="" id="graphicsdevbtn">Graphics Dev</a>
+                </div>
+                <p>You can message us and avail a free consultancy</p>
+                <a href="mailto:disibin@gmail.com">Book</a>
+            </div>
+
+
+            <div class="webdev">
+                <h2>Need website for portfolio or business?</h2>
+                <p>Website represents your portfolio, commercial services globally to 
+                the viewers or customers. A responsive, attracting, dynamic Website
+                 can easily satisfy your fans or customers
+                </p>
+                <p>So if want to build your own identity for your business, we can make
+                    your task easier.
+                </p>
+                <p>Our company doing great in building and developing website using multiple
+                    programming language. We use HTML, JavaScipt, React.js, tailwind css, Python and many more
+                </p>
+                <p>You can check our latest and creative project here <a href="">click</a></p>
+                <div class="slider">
+                    <div class="slide active">
+                      <img src="wevdev images/img1.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                      <img src="wevdev images/img2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                      <img src="wevdev images/img3.jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                      <img src="wevdev images/img4.jpg" alt="Image 4">
+                    </div>
+                </div>
+                
+                
+                <ul>
+                    <p>Our speciality:</p>
+                    <li>
+                        <p>Premium Designs</p>
+                    </li>
+                    <li>
+                        <p>Luxury Themes</p>
+                    </li>
+                    <li>
+                        <p>Elegant Look</p>
+                    </li>
+                    <li>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li>
+                        <p>Premium Features</p>
+                    </li>
+                    <li>
+                        <p>Standard SEO Optimization</p>
+                    </li>
+                    <li>
+                        <p>Custom High End Colors</p>
+                    </li>
+                    <li>
+                        <p>24/7 customer care</p>
+                    </li>
+                    <p>and much more</p>
+                </ul>
+
+                <p>We are very responsible to our work. Clients satisfaction and review are our most important to us.</p>
+                <p>We have multiple packages for our clients:</p>
+                <div class="packagebox">
+                    <div class="packnames">
+                        <a href="" id="pack1btn">Basic</a>
+                        <a href="" id="pack2btn">Standard</a>
+                        <a href="" id="pack3btn">Premium</a>
+                    </div>
+                    <div class="packages">
+                        <div class="package1">
+                            <div class="packname">
+                                <p>Basic Package</p>
+                                <p>$100</p>
+                            </div>
+                            <p>🚀For Blog, Portfolio and Personal Sites Includes Premium Design And Modern Web, Premium Plugins</p>
+                            <p class="deliverytime">7-day delivery & Unlimited Revisions</p>
+                            <button id="pack1buy">Buy</button>
+                        </div>
+                        <div class="package2">
+                            <div class="packname">
+                                <p>Standard Package</p>
+                                <p>$200</p>
+                            </div>
+                            <p>🚀For Startups and Small Business Includes Premium Design E-Commerce, Live Chat And More</p>
+                            <p class="deliverytime">10-day delivery & Unlimited Revisions</p>
+                            <button id="pack2buy">Buy</button>
+                        </div>
+                        <div class="package3">
+                            <div class="packname">
+                                <p>Premium Package</p>
+                                <p>$350</p>
+                            </div>
+                            <p>🚀For Corporates & Business Includes Premium Design Multiple Functions, Beat Your Market Rivals</p>
+                            <p class="deliverytime">14-day delivery & Unlimited Revisions</p>
+                            <button id="pack3buy">Buy</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p>For any queries click below</p>
+                <a href="mailto:disibin@gmail.com" class="mailus">Mail us</a>
+
+                
+                
+
+            </div>
+
+            <div class="appdev">
+                <h2>Transform Your Idea Into a Powerful App</h2>
+                <p>In a world that's always connected, your app should do more than just function — it should stand out, scale fast, and delight users.</p>
+                <p>We specialize in crafting high-performance, visually stunning mobile and web applications tailored to your vision.</p>
+                
+                <div class="weoffer">
+                    <h3>What We Offer:</h3>
+                    <div>
+                        <h4>Custom Mobile App Development:</h4>
+                        <p>From idea to launch, we develop native and cross-platform apps for Android & iOS with lightning speed and precision.</p>
+
+                    </div>
+                    <div>
+                        <h4>Web Application Solutions:</h4>
+                        <p>Build seamless, scalable, and secure web apps that work beautifully across all devices.</p>
+                    </div>
+                    <div>
+                        <h4> Intuitive UI/UX Design:</h4>
+                        <p>We don’t just build apps — we design experiences. Clean, modern, user-centered designs that keep users coming back.</p>
+                    </div>
+                    <div>
+                        <h4>Ongoing Support & Maintenance:</h4>
+                        <p>We’re with you after launch too — for updates, new features, and long-term support.</p>
+                    </div>
+                </div>
+                <div class="perfectfor">
+                    <ul>
+                        <h3>Perfect For:</h3>
+                        <li>
+                            Startups looking to launch fast
+                        </li>
+                        <li>Businesses going digital</li>
+                        <li>Entrepreneurs building their next big idea</li>
+                    </ul>
+                    
+                </div>
+                <div class="weuse">
+                    <h3>Technologies We Use:</h3>
+                    <p>React Native, Flutter, Swift, Kotlin, Firebase, Node.js, MongoDB, MySQL, REST APIs, and more...
+
+                    </p>
+                    
+                </div>
+                <h3>Ready to Start?</h3>
+                <p>Let’s bring your idea to life.</p>
+                <h4>Get a free consultation today!</h4>
+                <a href="mailto;disibin@gmail.com" class="mailus">📧 Email</a>
+
+
+            </div>
+
+            <div class="vedit">
+                <h1>Professional Video Editing Services</h1>
+                    <p>Your story deserves to be told with style, clarity, and impact. We bring your raw footage to life with cinematic cuts, smooth transitions, and powerful effects that captivate viewers and elevate your brand.</p>
+                
+                    <div>
+                      <h3>What We Do:</h3>
+                      <ul>
+                        <li>Promotional & Commercial Videos</li>
+                        <li>YouTube & Social Media Content</li>
+                        <li>Wedding & Event Highlights</li>
+                        <li>Reels, Shorts, and TikToks</li>
+                        <li>Color Correction & Audio Enhancement</li>
+                      </ul>
+                    </div>
+                
+                    <div>
+                      <h3>Why Choose Us?</h3>
+                      <ul>
+                        <li>Fast Turnaround & Revisions</li>
+                        <li>Professional Editing Tools (Adobe Premiere, After Effects, DaVinci Resolve)</li>
+                        <li>Creative Storytelling</li>
+                        <li>Affordable Pricing</li>
+                        <li>100% Client Satisfaction</li>
+                      </ul>
+                    </div>
+                
+                    <div>
+                      <h3>Who We Work With:</h3>
+                      <ul>
+                        <li>Content Creators & Influencers</li>
+                        <li>Brands & Businesses</li>
+                        <li>Freelancers & Marketers</li>
+                        <li>Wedding Planners & Event Managers</li>
+                      </ul>
+                    </div>
+                
+                    <div>
+                      <h4>Ready to Create Something Amazing?</h4>
+                      <p><strong>Let’s turn your footage into a masterpiece.</strong></p>
+                      
+                      <a href="mailto:disibin@gmail.com" class="mailus">Mail us</a>
+                    </div>
+            </div>
+
+
+            
+
+            <div class="graphicsdev">
+                <h2>Creative Graphic Design Studio</h2>
+                <p class="lead">We design graphics that capture attention, build brands, and drive results. Whether you’re launching, rebranding, or promoting — we make your visuals unforgettable.</p>
+
+                <div>
+                    <h3>Our Design Services:</h3>
+                    <ul>
+                        <li>Logo Design & Brand Identity</li>
+                        <li>Product Packaging & Labeling</li>
+                        <li>Social Media Post Templates</li>
+                        <li>Event Posters & Flyers</li>
+                        <li>Website UI Mockups</li>
+                        <li>Fashion Design</li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Who We Work With:</h3>
+                    <ul>
+                        <li>Startups and Creators</li>
+                        <li>Marketing Agencies</li>
+                        <li>Event Planners & Venues</li>
+                        <li>Shops, Restaurants, and Local Brands</li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <h4>Let's Work Together!</h4>
+                    <p>Want a custom quote or have an idea in mind?</p>
+                    <a href="mailto:disibin@gmail.com" class="mailus">Mail us</a>
+                </div>
+
+                    
+            </div>
+
+
+        </div>
 
 
 
 
-
-        <footer>
-            <h3>All rights are reserved by</h3>
-            <h1>DisiBin</h1>
-            <p>You can contact us: </p>
-            <a href="https://facebook.com/disibin">facebook</a>
-            <a href="https://instagram.com/user.disibin">instagram</a>
-        </footer>
     </div>
-    
 
-    
+
+
+    <footer>
+        <p>A liable web & graphics development community</p>
+        <h2>Disibin</h2>
+        <a href="mailto:disibin@gmail.com">Mail Us</a>
+        <a href="https://facebook.com/disibin">Facebook Page</a>
+
+
+    </footer>
+
+
+    <!-- sidebar and userbox control -->
 <script src="index.js"></script>
+    <!-- menubox control -->
+<script src="app.js"></script>
 </body>
 </html>
