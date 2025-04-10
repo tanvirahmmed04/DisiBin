@@ -1,0 +1,278 @@
+.contentbox{
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+.intro{
+    min-height: 15rem;
+    height: 90vh;
+    display: flex;
+    color: #153A42;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.intro a{
+    color: #fff;
+    padding: .3rem;
+    background-color: #162022;
+    text-decoration: none;
+    border-radius: .5rem;
+    width: 100px;
+    text-align: center;
+}
+.intro a:hover{
+    background-color: #D72326;
+    color: #fff;
+}
+
+.webdev{
+    min-height: 15rem;
+    display: flex;
+    color: #153A42;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+.webdev .slider {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
+.slider .slide {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    border-radius: 10px;
+}
+.slide p {
+    position: absolute;
+    bottom: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+.slide.active {
+    display: block;
+}
+.webdev ul p{
+    text-align: start;
+}
+
+.webdev .packagebox{
+    width: 20rem;
+    height: 16rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.packagebox .packnames{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 1.5rem;
+
+}
+.packagebox .packnames a{
+    color: #153A42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.packagebox .packages{
+    height: 14.5rem;
+    width: 100%;
+}
+.packages .package1,
+.packages .package2,
+.packages .package3{
+    height: 14.5rem;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+.packages .package1{
+    display: flex;
+}
+.packages .package2,
+.packages .package3{
+    display: none;
+}
+
+.packages .packname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.packagebox .packages .deliverytime{
+    position: absolute;
+    bottom: 22px;
+    font-size: 12px;
+}
+.packagebox .packages button{
+    width: 21rem;
+    background-color: #153A42;
+    color: #fff;
+    position: absolute;
+    bottom: -1px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.appdev{
+    min-height: 15rem;
+    display: flex;
+    color: #153A42;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.appdev .weoffer, .appdev .perfectfor, .weuse{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.perfectfor ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.perfectfor ul li{
+    text-align: start;
+}
+.weoffer h3, .perfectfor h3, .weuse h3{
+    color: #fff;
+    
+    background-color: #153A42;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.weoffer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+
+.vedit{
+    min-height: 15rem;
+    display: flex;
+    color: #153A42;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+.vedit  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.vedit ul li{
+    text-align: start;
+}
+.vedit div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 20px;
+}
+.vedit div h3{
+    color: #fff;
+    
+    background-color: #153A42;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.graphicsdev{
+    min-height: 15rem;
+    display: flex;
+    color: #153A42;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+}
+.graphicsdev  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.graphicsdev ul li{
+    text-align: start;
+}
+.graphicsdev div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 20px;
+}
+.graphicsdev div h3{
+    color: #fff;
+    
+    background-color: #153A42;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+for every div in contentbox */
+    /* .
+    min-height: 15rem;
+    height: 90vh;
+    display: flex;
+    color: #153A42;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+
+. */

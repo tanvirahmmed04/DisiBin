@@ -1,0 +1,179 @@
+.main{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+}
+.sidebar{
+    padding: 1rem;
+    width: 10rem;
+    display: none;
+    flex-direction: column;
+    border-right: 1px solid black;
+    justify-content: space-between;
+}
+.sidebar .sidebarcontent{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sidebarcontent a{
+    color: #153A42;
+    width: 100%;
+    height: 30px;
+}
+.sidebarcontent .sidebar-services, .sidebarcontent .sidebar-pages{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.sidebar-services a, .sidebar-pages a{
+    color: black;
+    height: 20px;
+    margin-top: 5px;
+     
+}
+.sidebar-services:hover .sidebar-serviceopt,
+.sidebar-pages:hover .sidebar-pageopt{
+    display: flex;
+
+}
+.sidebar-serviceopt, .sidebar-pageopt{
+    display: none;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.sidebar-serviceopt a, .sidebar-pageopt a{
+    font-size: 15px;
+}
+.sidebar .sidebtns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+/*     
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem; */
+
+} 
+.sidebar .sidebtns i{
+    cursor: pointer;
+}
+
+.userbox{
+    flex-grow: 1;
+    padding: .3rem;
+    width: 500px;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.userbox .signinbox{
+    background-color: lightcyan;
+    width: 43rem;
+    height: 20rem;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+.userbox .signupbox{
+    background-color: lightcyan;
+    width: 43rem;
+    height: 20rem;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+.signinbox .signinwelcome, .signupbox .signupwelcome{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18.49rem;
+    background-color: #153A42;
+    height: 20rem;
+}
+/* .signinbox .line, .signupbox .line{
+    background-color: black;
+    height: 15rem;
+    width: 1px;
+    margin-left: 2;
+
+} */
+
+.signinbox .fa-xmark, .signupbox .fa-xmark{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    cursor: pointer;
+}
+.signinbox .signinwelcome a{
+    color: #fff;
+    position: absolute;
+    bottom: 1rem;
+}
+.signinbox .signindetails,
+ .signupbox .signupdetails{
+    display: flex;
+    flex-direction: column;
+    width: 25.8rem;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    gap: 5px;
+}
+
+.signindetails div,
+.signupdetails div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.signindetails label, 
+.signupdetails label{
+    font-size: 12px;
+}
+.signindetails a, 
+.signupdetails a{
+    font-size: 12px;
+    color: #153A42;
+}
+.signindetails button, 
+.signupdetails button{
+    color: #fff;
+    background-color: #153A42;
+    width: 80px;
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.signupbox .fa-arrow-left{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    cursor: pointer;
+    color: #fff;
+}
+

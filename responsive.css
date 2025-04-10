@@ -1,0 +1,73 @@
+@media(max-width: 800px){
+
+    nav .navcontent{
+        display: none;
+    }
+    nav .fa-bars{
+        display: flex;
+    }
+    .sidebar{
+        font-size: 12px;
+        width: 7.5rem;
+    }
+
+    .sidebar-services a, .sidebar-pages a{
+        font-size: 12px;
+    }
+    .userbox .signinbox, .userbox .signupbox{
+        width: 23rem;
+        height: 15rem;
+    }
+    .signinbox .signinwelcome, .signupbox .signupwelcome{
+        font-size: 12px;
+        width: 9rem;
+    }
+    .signinbox .signindetails, .signupbox .signupdetails{
+        display: flex;
+        height: 15rem;
+        width: 14rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+    .signupbox .signupdetails{
+        gap: 0;
+    }
+    .signupdetails button{
+        margin-top: 4px;
+    }
+
+    
+
+    .intro, .graphicsdev, .vedit, .appdev, .webdev{
+        font-size: 12px;
+    }
+
+    .webdev .slider{
+        width: 300px;
+        height: 225px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+        font-size: 11px;
+    }
+
+
+}
