@@ -30,7 +30,7 @@ pack1btn.onclick= function(act){
     pack1.style.display="flex";
     pack2.style.display="none";
     pack3.style.display="none";
-    pack1btn.style.borderBottom="1px solid #153A42";
+    pack1btn.style.borderBottom="3px solid #153A42";
     pack2btn.style.borderBottom="none";
     pack3btn.style.borderBottom="none";
 }
@@ -39,7 +39,7 @@ pack2btn.onclick= function(act){
     pack1.style.display="none";
     pack2.style.display="flex";
     pack3.style.display="none";
-    pack2btn.style.borderBottom="1px solid  #153A42";
+    pack2btn.style.borderBottom="3px solid  #153A42";
     pack1btn.style.borderBottom="none";
     pack3btn.style.borderBottom="none";
 }
@@ -50,7 +50,7 @@ pack3btn.onclick= function(act){
     pack3.style.display="flex";
     pack1btn.style.borderBottom="none";
     pack2btn.style.borderBottom="none";
-    pack3btn.style.borderBottom="1px solid #153A42";
+    pack3btn.style.borderBottom="3px solid #153A42";
 }
 
 
