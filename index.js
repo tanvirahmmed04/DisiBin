@@ -1,3 +1,13 @@
+//navbar
+document.querySelector("#servicesbtn").onclick= function(act){
+    act.preventDefault();
+}
+document.querySelector("#pagesbtn").onclick= function(act){
+    act.preventDefault();
+}
+
+
+
 // sidebaropen
 document.querySelector("#menubtn").onclick= function(){
     let sidebar= document.querySelector(".sidebar");
