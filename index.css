@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    color: #153A42;
 }
 
 body {
@@ -12,33 +11,20 @@ body {
     max-width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    color: #153A42;
+    perspective: 1000;
 
-    /* Gradient background
-    background: linear-gradient(270deg, #153A42, #173F35, #034470, #24240c);
-    background-size: 1000% 1000%;
-    animation: gradientBG 15s ease infinite; */
+    
 }
 
-/* @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
 
 .mailus{
-    background-color: #153A42;
-    color: red;
+    background-color: #fff;
+    color: #153A42;
     font-weight: 600;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 4px;
+    width: 100px;
 }
 nav{
     background-color: #fff;
@@ -107,6 +93,10 @@ nav .services .serviceopt, nav .pages .pageopt{
     justify-content: start;
     
 }
+.serviceopt #webdevbtn, .serviceopt #appdevbtn,.serviceopt #veditbtn,.serviceopt #graphicsdevbtn{
+    color: #fff;
+}
+
 nav .fa-user{
     width: 80px;
     cursor: pointer;
