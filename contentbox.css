@@ -5,26 +5,35 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
     text-align: center;
 }
 .intro{
     min-height: 15rem;
     height: 90vh;
     display: flex;
-    color: #153A42;
+    color: #fff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    width: 100%;
+    background-color: #153A42;
 }
-.intro a{
-    color: #fff;
+.intro .opt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 5px;
+}
+.intro .opt a, .intro a{
+    color: #162022;
     padding: .3rem;
-    background-color: #162022;
+    background-color: #fff;
     text-decoration: none;
     border-radius: .5rem;
-    width: 100px;
+    width: 120px;
     text-align: center;
 }
 .intro a:hover{
@@ -35,14 +44,24 @@
 .webdev{
     min-height: 15rem;
     display: flex;
-    color: #153A42;
+    color: #fff;
+    background-color: #6ba29f;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 35px;
     padding: 20px;
+    width: 100%;
 }
-.webdev .slider {
+.webdev .webdevview{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+}
+.webdevview .slider {
     width: 400px;
     height: 300px;
     margin: 20px;
@@ -80,7 +99,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 2px solid #fff;
     overflow: hidden;
 }
 .packagebox .packnames{
@@ -91,7 +110,7 @@
 
 }
 .packagebox .packnames a{
-    color: #153A42;
+    color: #FFFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,6 +126,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
+    border-top: 2px solid #fff;
 }
 .packages .package1{
     display: flex;
@@ -132,29 +152,40 @@
 }
 .packagebox .packages button{
     width: 21rem;
-    background-color: #153A42;
-    color: #fff;
+    background-color: #fff;
+    color: #153A42;
     position: absolute;
     bottom: -1px;
     cursor: pointer;
     height: 20px;
+    border: none;
 }
 
 .appdev{
     min-height: 15rem;
     display: flex;
-    color: #153A42;
+    color: #fff;
+    background-color: 	#283a45;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
     padding: 20px;
+    width: 100%;
 }
 .appdev .weoffer, .appdev .perfectfor, .weuse{
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
+}
+.appdev .perfectuse{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
 }
 .perfectfor ul{
     display: flex;
@@ -166,9 +197,9 @@
     text-align: start;
 }
 .weoffer h3, .perfectfor h3, .weuse h3{
-    color: #fff;
+    color: #153A42;
     
-    background-color: #153A42;
+    background-color: #fff;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -183,12 +214,22 @@
 .vedit{
     min-height: 15rem;
     display: flex;
-    color: #153A42;
+    color: #fff;
+    background-color: #153A42;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 40px;
     padding: 20px;
+    width: 100%;
+}
+.vedit .dowork{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 120px;
+
 }
 .vedit  ul{
     display: flex;
@@ -207,9 +248,9 @@
     padding: 20px;
 }
 .vedit div h3{
-    color: #fff;
+    color: #153A42;
     
-    background-color: #153A42;
+    background-color: #fff;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
@@ -220,11 +261,13 @@
 .graphicsdev{
     min-height: 15rem;
     display: flex;
-    color: #153A42;
+    color: #fff;
+    background-color: #6ba29f;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 40px;
     padding: 20px;
 }
 .graphicsdev  ul{
@@ -244,9 +287,9 @@
     padding: 20px;
 }
 .graphicsdev div h3{
-    color: #fff;
+    color: #153A42;
     
-    background-color: #153A42;
+    background-color: #fff;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
